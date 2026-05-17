@@ -2,25 +2,29 @@
 <html lang="pt">
 
 <head>
-    <title>Busca</title>
+    <meta charset="UTF-8">
+    <title>Foogle</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <ul class="navbar">
-        <li><a href="images.html">Imagens</a></li>
-        <li><a href="advanced.html">Pesquisa Avançada</a></li>
-    </ul>
-    <div>
-        <center class="vertical-center">
-            <h1>Foogle</h1>
-            <form action="https://google.com/search">
-                <input type="text" name="q" class="searchbar">
-                <input type="submit" value="Pesquisar no Google" class="searchbutton">
-                <input type="submit" name="btnI" value="Estou com sorte" class="searchbutton">
-            </form>
-        </center>
-    </div>
+
+    <nav class="navbar">
+        <a href="images.html">Imagens</a>
+        <a href="advanced.html">Pesquisa Avançada</a>
+    </nav>
+
+    <main class="center-layout">
+        <h1 class="logo">Foogle</h1>
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" class="searchbar" autofocus>
+            <div class="button-row">
+                <input type="submit" value="Pesquisa Google" class="searchbutton">
+                <input type="submit" name="btnI" value="Estou com Sorte" class="searchbutton">
+            </div>
+        </form>
+    </main>
+
 </body>
 
 </html>

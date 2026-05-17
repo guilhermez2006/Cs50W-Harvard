@@ -2,22 +2,28 @@
 <html lang="pt">
 
 <head>
-	<title>Imagens</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Foogle Imagens</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<ul class="navbar">
-		<li><a href="index.html">Voltar para Busca</a></li>
-	</ul>
-	<center class="vertical-center">
-		<h1>Foogle</h1>
-		<form action="https://google.com/search">
-			<input type="text" name="q" class="searchbar">
-			<input hidden="true" name="tbm" value="isch">
-			<input type="submit" value="Buscar Imagens" class="searchbutton">
-		</form>
-	</center>
+
+    <nav class="navbar">
+        <a href="index.html">Busca</a>
+    </nav>
+
+    <main class="center-layout">
+        <h1 class="logo">Foogle</h1>
+        <form action="https://www.google.com/search" method="get">
+            <input type="hidden" name="tbm" value="isch">
+            <input type="text" name="q" class="searchbar" autofocus>
+            <div class="button-row">
+                <input type="submit" value="Buscar Imagens" class="searchbutton">
+            </div>
+        </form>
+    </main>
+
 </body>
 
 </html>
